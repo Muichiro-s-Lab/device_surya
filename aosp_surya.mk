@@ -14,22 +14,14 @@ $(call inherit-product, device/xiaomi/surya/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-# Horizondroid Flags
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_FACE_UNLOCK_SUPPORTED := true
+# Project-Elixir Official Stuff
+IS_PHONE := true
+TARGET_SUPPORTS_QUICK_TAP := true
+CUSTOM_BUILD_TYPE := UNOFFICIAL
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_STOCK_ACORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_SUPPORTS_QUICK_TAP  := false
-WITH_GMS := true
-TARGET_USES_MINI_GAPPS := true
-TARGET_ENABLE_BLUR := false
-TARGET_DISABLE_EPPE := true
-TARGET_DEBLOAT := true
-TARGET_BUILD_VIMUSIC := true
-TARGET_USES_MIUI_CAMERA := true
-
-# Horizondroid
-HORIZON_BUILD_TYPE= UNOFFICIAL
-HORIZON_MAINTAINER := Muichiro09
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 PRODUCT_NAME := aosp_surya
 PRODUCT_DEVICE := surya

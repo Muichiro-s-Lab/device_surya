@@ -25,6 +25,7 @@ BUILD_WITH_GAPPS := false
 USE_QUICKPIC := true
 USE_DUCKDUCKGO := false
 TARGET_USES_MIUI_CAMERA := true
+SUPERIOR_OFFICIAL := true
 
 PRODUCT_NAME := superior_surya
 PRODUCT_DEVICE := surya

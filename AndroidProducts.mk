@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_surya.mk
+    $(LOCAL_DIR)/pixelstar_surya.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_surya-user \
-    aosp_surya-userdebug \
-    aosp_surya-eng
+    pixelstar_surya-user \
+    pixelstar_surya-userdebug \
+    pixelstar_surya-eng

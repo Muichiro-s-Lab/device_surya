@@ -12,19 +12,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/pixelstar/config/common_full_phone.mk)
 
-# Project-Elixir Official Stuff
-IS_PHONE := true
-TARGET_SUPPORTS_QUICK_TAP := true
-CUSTOM_BUILD_TYPE := UNOFFICIAL
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
-TARGET_INCLUDE_STOCK_ACORE := false
-TARGET_BOOT_ANIMATION_RES := 1080
+# Specific flags
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_ENABLE_BLUR := false
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_QUICK_TAP := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+PIXELSTAR_BUILD_TYPE := unofficial
+USE_PIXEL_CHARGER := true
+TARGET_USES_MIUI_CAMERA := true
 
-PRODUCT_NAME := aosp_surya
+PRODUCT_NAME := pixelstar_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := M2007J20CG

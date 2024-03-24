@@ -24,6 +24,9 @@ PRODUCT_COPY_FILES += \
 # Inherit surya firmware images
 $(call inherit-product, firmware/xiaomi/surya/Android.mk)
 
+# Inherit surya firmware images
+$(call inherit-product, firmware/xiaomi/surya/Android.mk)
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong \

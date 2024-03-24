@@ -20,9 +20,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
-# XiaomiParts
-$(call inherit-product, device/xiaomi/surya/parts/parts.mk)
-
 # Inherit surya firmware images
 $(call inherit-product, firmware/xiaomi/surya/Android.mk)
 
@@ -112,9 +109,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libpiex_shim
 
-# Camera
-$(call inherit-product-if-exists, device/xiaomi/surya-miuicamera/config.mk)
-
+# Device-specific settings
+PRODUCT_PACKAGES += \
+    XiaomiParts
 
 # Dex/ART optimization
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false

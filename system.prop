@@ -42,6 +42,9 @@ persist.mm.enable.prefetch=true
 # Radio
 ril.subscription.types=RUIM
 
+# Maintainer
+ro.spos.maintainer=Muichiro09
+
 # Recovery
 ro.recovery.ui.margin_height=48
 

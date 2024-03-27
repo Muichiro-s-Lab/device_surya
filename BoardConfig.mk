@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020-2023 The aospOS Project
+# Copyright (C) 2020-2023 The superiorOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -68,7 +68,7 @@ LOC_HIDL_VERSION := 4.0
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/hidl/framework_compatibility_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    vendor/aosp/config/device_framework_matrix.xml
+    vendor/superior/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
 DEVICE_MANIFEST_FILE += hardware/qcom-caf/sm8150/media/conf_files/sm6150/c2_manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
@@ -184,7 +184,7 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # SurfaceFlinger
-TARGET_USE_AOSP_SURFACEFLINGER := true
+TARGET_USE_superior_SURFACEFLINGER := true
 
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2023-06-01
